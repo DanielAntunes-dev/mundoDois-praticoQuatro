@@ -1,0 +1,25 @@
+<main class="container mt-4">
+  <h1>Inclusão de Livro</h1>
+  <form (submit)="incluir($event)">
+    <div class="form-group">
+      <label>Título:</label>
+      <input type="text" class="form-control" [(ngModel)]="titulo" name="titulo"/>
+    </div>
+    <div class="form-group">
+      <label>Resumo:</label>
+      <textarea class="form-control" [(ngModel)]="resumo" name="resumo"></textarea>
+    </div>
+    <div class="form-group">
+      <label>Editora:</label>
+      <select class="form-control" [(ngModel)]="codEditora"  name="codEditora" (change)="tratarCombo($event)">
+        <option *ngFor="let opcao of opcoes" [value]="opcao.value">{{ opcao.text }}</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Autores (um por linha):</label>
+      <textarea class="form-control" [(ngModel)]="autores" name="autores"></textarea>
+    </div>
+    <hr />
+    <button type="submit" class="btn btn-primary">Incluir Livro</button>
+  </form>
+</main>
