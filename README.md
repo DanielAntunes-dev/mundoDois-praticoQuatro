@@ -8,3 +8,22 @@ tornando-se capacitado para lidar com contextos reais de aplicação do framewor
 * Implementar componentes, utilizando Type Script e modelos HTML
 * Utilizar a biblioteca para gerenciamento de formulários no Angular
 * Implementar a navegação interna do front-end com base em Angular
+
+
+# Rodar Projeto
+```bash
+# Clone this repository
+$ git clone https://github.com/DanielAntunes-dev/mundoDois-praticoQuatro
+
+# Go into the repository
+$ cd livros-angular
+
+# Install dependencies
+$ npm install
+
+# Run server
+$ ng serve
+
+# running http://localhost:4200/
+```
+
